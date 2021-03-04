@@ -4,12 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "pm2-runtime start ecosystem.config.js --env production"
   },
   "author": "Daniel Doull",
   "license": "ISC",
   "dependencies": {
     "compression": "^1.7.4",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "pm2": "^4.5.5"
   }
 }
